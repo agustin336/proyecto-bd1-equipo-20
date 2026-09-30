@@ -189,7 +189,7 @@ CREATE TABLE Computadora
   id_placa_video INT NULL,
   id_almacenamiento INT NOT NULL,
   id_RAM INT NOT NULL,
-  id_fuente_poder INT NOT NULL,
+  id_fuente_poder INT NULL,
   id_procesador INT NOT NULL,
   id_placa_madre INT NOT NULL,
 
