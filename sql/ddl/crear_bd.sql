@@ -18,7 +18,7 @@ CREATE TABLE Tipo_usuario
 CREATE TABLE Usuario
 (
   id_usuario INT IDENTITY(1,1) NOT NULL,
-  dni VARCHAR(8)  NOT NULL,
+  dni CHAR(8)  NOT NULL,
   nombre_usuario VARCHAR(100) NOT NULL,
   contrasena VARCHAR(100) NOT NULL,
   email VARCHAR(100) NOT NULL,
@@ -39,7 +39,7 @@ CREATE TABLE Cliente
   email VARCHAR(100) NOT NULL,
   nombre VARCHAR(100) NOT NULL,
   apellido VARCHAR(100) NOT NULL,
-  dni VARCHAR(8) NOT NULL,
+  dni CHAR(8) NOT NULL,
   telefono_contacto VARCHAR(16) NOT NULL,
   CONSTRAINT PK_id_cliente PRIMARY KEY (id_cliente),
   CONSTRAINT UQ_email UNIQUE (email),
