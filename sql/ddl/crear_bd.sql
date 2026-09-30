@@ -142,12 +142,12 @@ CREATE TABLE Fuente_Poder
 (
   id_fuente_poder INT IDENTITY,
   modelo VARCHAR(100) NOT NULL,
-  frecuencia_W FLOAT NOT NULL,
+  potencia_W FLOAT NOT NULL,
   RGB VARCHAR(100) NOT NULL,
   marca VARCHAR(100) NOT NULL,
 
   CONSTRAINT PK_id_fuente_poder PRIMARY KEY (id_fuente_poder),
-  CONSTRAINT CHK_frecuancia_W CHECK (frecuencia_W > 0)
+  CONSTRAINT CHK_Potencia_W CHECK (potencia_W > 0)
 );
 GO
 
@@ -180,13 +180,13 @@ GO
 CREATE TABLE Computadora
 (
   id_computadora INT IDENTITY,
-  nombre VARCHAR(100),
-  marca VARCHAR(100),
-  tasa_refresco FLOAT,
+  nombre VARCHAR(100) NULL,
+  marca VARCHAR(100) NULL,
+  tasa_refresco FLOAT NULL,
   refrigeracion VARCHAR(100) NOT NULL,
   stock INT NOT NULL,
-  id_gabinete INT NOT NULL,
-  id_placa_video INT NOT NULL,
+  id_gabinete INT NULL,
+  id_placa_video INT NULL,
   id_almacenamiento INT NOT NULL,
   id_RAM INT NOT NULL,
   id_fuente_poder INT NOT NULL,
