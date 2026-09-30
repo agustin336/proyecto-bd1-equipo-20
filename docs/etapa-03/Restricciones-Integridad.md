@@ -102,7 +102,7 @@ Nombre De la Tabla
 
 * `PK_id_almacenamiento` (PRIMARY KEY en `id_almacenamiento`): Identificador único autoincremental para cada unidad de almacenamiento (SSD, HDD, etc.).
 * `CHK_velocidad_lectura` (CHECK): Garantiza que la velocidad de lectura especificada sea un valor numérico positivo (`velocidad_lectura > 0`).
-* Campos obligatorios (`NOT NULL`): `marca`, `velocidad\_lectura`, `tamano_gb`, `tipo`, `modelo`.
+* Campos obligatorios (`NOT NULL`): `marca`, `velocidad_lectura`, `tamano_gb`, `tipo`, `modelo`.
 
 
 
@@ -113,7 +113,7 @@ Nombre De la Tabla
 * `PK_id_RAM` (PRIMARY KEY en `id_RAM`): Identificador único autoincremental para cada módulo de memoria RAM.
 * `CHK_cantidad_memoria` (CHECK): Valida que la cantidad de memoria en gigabytes sea mayor a cero (`cantidad_memoria > 0`).
 * `CHK_frecuencia` (CHECK): Asegura que la frecuencia de la memoria RAM sea un valor positivo (`frecuencia > 0`).
-* Campos obligatorios (`NOT NULL`): `tipo`, `cantidad\_memoria`, `frecuencia`, `marca`, `RGB`.
+* Campos obligatorios (`NOT NULL`): `tipo`, `cantidad_memoria`, `frecuencia`, `marca`, `RGB`.
 
 
 
@@ -172,7 +172,7 @@ Todas aseguran la existencia del componente respectivo en su tabla de origen.
 
 ###### **Detalle\_Venta**
 
-* `PK_id_detall\_venta` (PRIMARY KEY en `id_detalle_venta`): Identificador único autoincremental para cada ítem dentro del detalle de una venta.
+* `PK_id_detalle_venta` (PRIMARY KEY en `id_detalle_venta`): Identificador único autoincremental para cada ítem dentro del detalle de una venta.
 * `FK_id_cabecera_factura` (FOREIGN KEY en `id_cabecera_factura`): Relaciona el detalle con su correspondiente cabecera de factura, garantizando integridad referencial.
 * `FK_id_computadora` (FOREIGN KEY en `id_computadora`): Asegura que la computadora vendida exista en el catálogo de equipos.
 * `CHK_cantidad` (CHECK): Valida que la cantidad de artículos vendidos en esa línea sea estrictamente mayor a cero (`cantidad > 0`).
