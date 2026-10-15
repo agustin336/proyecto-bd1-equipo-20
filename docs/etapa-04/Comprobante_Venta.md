@@ -78,4 +78,4 @@ SUM(dv.subtotal) OVER (
 
 ## 4. Conclusión
 
-Esta estructura resuelve de manera óptima la consolidación del comprobante. A nivel de base de datos se entrega una estructura plana orientada a renglones con sus respectivos subtotales y acumulados, permitiendo que la capa de aplicación (interfaz de usuario) gestione fácilmente la presentación única del encabezado y la representación tabular de los ítems de la venta.
+Esta estructura resuelve consolidación del comprobante. A nivel de base de datos se entrega una estructura orientada a renglones con sus respectivos subtotales y acumulados, permitiendo que la futura capa de aplicación (interfaz de usuario) gestione fácilmente la presentación única del encabezado y la representación de los ítems y detalles de la venta.
