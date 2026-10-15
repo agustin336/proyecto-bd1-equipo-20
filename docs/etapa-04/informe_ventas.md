@@ -1,3 +1,4 @@
+# Etapa 4 — informe_ventas
 ## 1. ¿Qué necesidad de información resuelve la consulta?
 La consulta permite conocer cuántas ventas realizó cada vendedor y cuál fue el importe total vendido durante un período determinado. Esta información ayuda a la empresa a evaluar el desempeño de sus vendedores y comparar sus resultados.
 ## 2. ¿Qué estrategia SQL utiliza?
