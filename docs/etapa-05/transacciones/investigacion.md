@@ -1,10 +1,5 @@
 # Informe de Investigación: Manejo de Transacciones en SQL Server
 
-**Asignatura:** Bases de Datos I  
-**Equipo:** 20  
-**Tema:** Transacciones y transacciones anidadas (Etapa V)  
-**Integrante:** Ian Ivan Alexey Stach
-
 ## Introducción
 
 Una operación de negocio, como registrar una venta, modifica varias tablas a la vez. Si falla a mitad de camino, la base queda con datos parciales. Esta investigación estudia las **transacciones** de SQL Server Express (T-SQL), que permiten tratar esa operación como una unidad, y las aplica a la venta de una computadora en nuestro sistema.
