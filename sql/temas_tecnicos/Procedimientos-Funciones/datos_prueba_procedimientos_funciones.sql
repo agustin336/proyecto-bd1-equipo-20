@@ -11,9 +11,9 @@ SELECT dbo.calcularTotalVendido() AS total_Vendido;
 GO
 
 -- Ejecuta la función y muestra el stock total de las computadoras que coinciden con el parametro.
-SELECT dbo.StockDisponible('1') AS StockTotal;
-SELECT dbo.StockDisponible('2') AS StockTotal;
-SELECT dbo.StockDisponible('3') AS StockTotal;
+SELECT dbo.StockDisponible(1) AS StockTotal;
+SELECT dbo.StockDisponible(2) AS StockTotal;
+SELECT dbo.StockDisponible(3) AS StockTotal;
 GO
 
 -- Ejecutar el procedimiento almacenado para agregar una computadora.
