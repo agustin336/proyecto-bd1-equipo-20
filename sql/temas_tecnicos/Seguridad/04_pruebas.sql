@@ -21,6 +21,9 @@ GO
    PRUEBA 1 - SELECT sobre Computadora con usuario_vendedor
    Resultado esperado: correcto (miembro de rol_vendedor)
    ---------------------------------------------------------------------------- */
+USE Venta_Computadoras;
+GO
+
 PRINT '=== PRUEBA 1: SELECT sobre Computadora con usuario_vendedor ===';
 
 -- Permisos efectivos de usuario_vendedor sobre Computadora
@@ -50,6 +53,9 @@ GO
    PRUEBA 2 - SELECT sobre Computadora con usuario_sin_rol
    Resultado esperado: acceso denegado (error 229)
    ---------------------------------------------------------------------------- */
+USE Venta_Computadoras;
+GO
+
 PRINT '=== PRUEBA 2: SELECT sobre Computadora con usuario_sin_rol ===';
 
 -- Permisos efectivos de usuario_sin_rol sobre Computadora (tabla vacia)
@@ -78,6 +84,9 @@ GO
    PRUEBA 3 - INSERT directo sobre Computadora con usuario_admin
    Resultado esperado: correcto (miembro de db_owner)
    ---------------------------------------------------------------------------- */
+USE Venta_Computadoras;
+GO
+
 PRINT '=== PRUEBA 3: INSERT directo sobre Computadora con usuario_admin ===';
 
 PRINT '--- Estado ANTES ---';
@@ -114,6 +123,9 @@ GO
    PRUEBA 4 - INSERT directo sobre Computadora con usuario_supervisor
    Resultado esperado: acceso denegado (no tiene INSERT sobre la tabla)
    ---------------------------------------------------------------------------- */
+USE Venta_Computadoras;
+GO
+
 PRINT '=== PRUEBA 4: INSERT directo sobre Computadora con usuario_supervisor ===';
 
 -- Permisos efectivos de usuario_supervisor sobre Computadora (tabla vacia)
@@ -153,6 +165,9 @@ GO
    dueño (dbo), por lo que solo se verifica el permiso EXECUTE
    (encadenamiento de propiedad).
    ---------------------------------------------------------------------------- */
+USE Venta_Computadoras;
+GO
+
 PRINT '=== PRUEBA 5: EXEC dbo.agregarComputadora con usuario_supervisor ===';
 
 -- Permisos efectivos de usuario_supervisor sobre el procedimiento
@@ -191,6 +206,9 @@ GO
    Requiere la prueba 5 (usa la computadora insertada en esa prueba).
    Resultado esperado: acceso denegado (no tiene UPDATE sobre la tabla)
    ---------------------------------------------------------------------------- */
+USE Venta_Computadoras;
+GO
+
 PRINT '=== PRUEBA 6: UPDATE directo del stock con usuario_supervisor ===';
 
 PRINT '--- Estado ANTES ---';
@@ -226,6 +244,9 @@ GO
    Resultado esperado: correcto. Si los triggers de auditoría están
    instalados, el cambio se registra a nombre de usuario_supervisor.
    ---------------------------------------------------------------------------- */
+USE Venta_Computadoras;
+GO
+
 PRINT '=== PRUEBA 7: EXEC dbo.actualizarStock con usuario_supervisor ===';
 
 PRINT '--- Estado ANTES ---';
@@ -275,6 +296,9 @@ GO
    Resultado esperado: rechazado por el procedimiento (error 50001).
    El permiso EXECUTE no evita las validaciones del procedimiento.
    ---------------------------------------------------------------------------- */
+USE Venta_Computadoras;
+GO
+
 PRINT '=== PRUEBA 8: EXEC dbo.agregarComputadora con stock -1 (usuario_supervisor) ===';
 
 PRINT '--- Estado ANTES ---';
