@@ -91,7 +91,7 @@ se realizaron las siguientes comprobaciones:
 |---|---|---|---|---|
 | 1 | Consulta de stock (computadora ID 1) | `StockDisponible(1)` devuelve el stock registrado para la computadora con ID 1. | La función devuelve el stock correspondiente al registro consultado. | [Resultados](Evidencias/Funcion_stockDisponible1.png) |
 | 2 | Consulta de stock (computadora ID 2) | `StockDisponible(2)` devuelve el stock registrado para la computadora con ID 2. | La función devuelve el stock correspondiente al registro consultado. | [Resultados](Evidencias/Funcion_stockDisponible2.png) |
-| 3 | Consulta de stock (ID inexistente: 98) | `StockDisponible(98)` devuelve el valor `0`. | La función devuelve `0`. | [Resultados](Evidencias/Funcion_stockDisponible1.png) |
+| 3 | Consulta de stock (ID inexistente: 98) | `StockDisponible(98)` devuelve el valor `0`. | La función devuelve `0`. | [Resultados](Evidencias/Funcion_stockDisponible3.png) |
 | 4 | Actualización de stock (computadora ID 4, cantidad 3) | El procedimiento incrementa en 3 unidades el stock de la computadora con ID 4. | Se incrementa el stock en 3 unidades. | [Resultados](Evidencias/Procedimiento_actualizarStock.png) |
 | 5 | Actualización de stock (computadora ID 4, cantidad 0) | El procedimiento genera el error 50003 y no modifica el stock. | El procedimiento rechaza la operación y no modifica el stock. | [Resultados](Evidencias/Procedimiento_actualizarStock3.png) |
 | 6 | Eliminar computadora (ID 11) | Se elimina la computadora con ID 11. | La computadora se elimina correctamente. | [Resultados](Evidencias/Procedimiento_quitarComputadora.png) |
